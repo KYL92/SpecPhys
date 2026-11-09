@@ -1,0 +1,136 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/EGO6",
+ "subjects": [
+  {
+   "id": 1201,
+   "frames_dir": "_workspace/data/faces/diff_female_01_d10_frames",
+   "bpm": 64,
+   "alpha": 0.01,
+   "seed": 1201,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.3,
+   "wave_phi2": 0.2,
+   "wave_a3": 0.1,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 30,
+    "rot_deg": 5,
+    "periodic_motion_amp": 2,
+    "periodic_motion_hz": 12,
+    "illum_drift": 0.15,
+    "sensor_std": 2
+   }
+  },
+  {
+   "id": 1202,
+   "frames_dir": "_workspace/data/faces/diff_female_01_d14_frames",
+   "bpm": 78,
+   "alpha": 0.01,
+   "seed": 1202,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.15,
+   "wave_phi2": 0.2,
+   "wave_a3": 0.1,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 25,
+    "rot_deg": 4,
+    "periodic_motion_amp": 1.5,
+    "periodic_motion_hz": 10,
+    "color_drift": 0.08
+   }
+  },
+  {
+   "id": 1203,
+   "frames_dir": "_workspace/data/faces/diff_female_01_d3_frames",
+   "bpm": 92,
+   "alpha": 0.01,
+   "seed": 1203,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.45,
+   "wave_phi2": 0.2,
+   "wave_a3": 0.1,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 35,
+    "rot_deg": 6,
+    "periodic_motion_amp": 3,
+    "periodic_motion_hz": 8,
+    "flicker_amp": 0.02,
+    "flicker_hz": 1.0
+   }
+  },
+  {
+   "id": 1204,
+   "frames_dir": "_workspace/data/faces/diff_female_01_d9_frames",
+   "bpm": 56,
+   "alpha": 0.01,
+   "seed": 1204,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.0,
+   "wave_phi2": 0.2,
+   "wave_a3": 0.1,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 20,
+    "rot_deg": 3,
+    "periodic_motion_amp": 2,
+    "periodic_motion_hz": 14,
+    "scale_jit": 0.04
+   }
+  },
+  {
+   "id": 1205,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 105,
+   "alpha": 0.01,
+   "seed": 1205,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.6,
+   "wave_phi2": 0.2,
+   "wave_a3": 0.1,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 40,
+    "rot_deg": 6,
+    "periodic_motion_amp": 2.5,
+    "periodic_motion_hz": 11,
+    "illum_drift": 0.2,
+    "sensor_std": 3
+   }
+  },
+  {
+   "id": 1206,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 70,
+   "alpha": 0.01,
+   "seed": 1206,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.25,
+   "wave_phi2": 0.2,
+   "wave_a3": 0.1,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 30,
+    "rot_deg": 5,
+    "periodic_motion_amp": 2,
+    "periodic_motion_hz": 9,
+    "color_drift": 0.1
+   }
+  }
+ ]
+}

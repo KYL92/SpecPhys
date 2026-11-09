@@ -1,0 +1,356 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/SYN_MMPD",
+ "subjects": [
+  {
+   "id": 3001,
+   "frames_dir": "_workspace/data/faces/mmpd_s1_frames",
+   "bpm": 52,
+   "alpha": 0.01,
+   "seed": 3001,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.7159182933143957,
+   "wave_phi2": 0.21312918330459912,
+   "wave_a3": 0.4966695824248828,
+   "wave_phi3": -0.3883446372265984,
+   "noise": {
+    "illum_drift": 1.0689710411559301,
+    "flicker_amp": 0.02234390506646916,
+    "flicker_hz": 0.76131323397237,
+    "motion_px": 58.9941760866536,
+    "rot_deg": 0.9784257976488906,
+    "sensor_std": 2.778013451522111,
+    "color_drift": 0.06232873832990894
+   }
+  },
+  {
+   "id": 3002,
+   "frames_dir": "_workspace/data/faces/mmpd_s2_frames",
+   "bpm": 58,
+   "alpha": 0.01,
+   "seed": 3002,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.8492407657727101,
+   "wave_phi2": 0.11629745003156688,
+   "wave_a3": 0.327776123440891,
+   "wave_phi3": 0.15032548044694483,
+   "noise": {
+    "illum_drift": 1.347482850603671,
+    "flicker_amp": 0.010138661641682612,
+    "flicker_hz": 0.5589800953006198,
+    "motion_px": 49.512528825682026,
+    "rot_deg": 1.2872569594863679,
+    "sensor_std": 3.0455798455734864,
+    "color_drift": 0.05867761716500844
+   }
+  },
+  {
+   "id": 3003,
+   "frames_dir": "_workspace/data/faces/mmpd_s3_frames",
+   "bpm": 65,
+   "alpha": 0.01,
+   "seed": 3003,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.8620393646364213,
+   "wave_phi2": -0.14762460527987484,
+   "wave_a3": 0.19254457141243803,
+   "wave_phi3": 0.3923645741045879,
+   "noise": {
+    "illum_drift": 0.5335196318262033,
+    "flicker_amp": 0.007492952400848808,
+    "flicker_hz": 0.6660824803336101,
+    "motion_px": 69.52988703271397,
+    "rot_deg": 2.35132631090941,
+    "sensor_std": 0.9909379204026589,
+    "color_drift": 0.04384869572967384
+   }
+  },
+  {
+   "id": 3004,
+   "frames_dir": "_workspace/data/faces/mmpd_s4_frames",
+   "bpm": 71,
+   "alpha": 0.01,
+   "seed": 3004,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.2732444868841763,
+   "wave_phi2": 0.2343354020719675,
+   "wave_a3": 0.4650410005988337,
+   "wave_phi3": -0.30043047783272625,
+   "noise": {
+    "illum_drift": 0.9842044290694337,
+    "flicker_amp": 0.020751610805762294,
+    "flicker_hz": 0.6837374584814345,
+    "motion_px": 79.35522200972801,
+    "rot_deg": 0.7351801511683502,
+    "sensor_std": 8.336543210965964,
+    "color_drift": 0.07278278032003992
+   }
+  },
+  {
+   "id": 3005,
+   "frames_dir": "_workspace/data/faces/mmpd_s5_frames",
+   "bpm": 78,
+   "alpha": 0.01,
+   "seed": 3005,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.8758081716722881,
+   "wave_phi2": -0.2875079739161986,
+   "wave_a3": 0.4078287212515821,
+   "wave_phi3": 0.3174661426823516,
+   "noise": {
+    "illum_drift": 0.14929495596841488,
+    "flicker_amp": 0.01694744405838609,
+    "flicker_hz": 0.5913276954500531,
+    "motion_px": 67.68781571101624,
+    "rot_deg": 1.3862275741633827,
+    "sensor_std": 3.798107556029005,
+    "color_drift": 0.06864083461667839
+   }
+  },
+  {
+   "id": 3006,
+   "frames_dir": "_workspace/data/faces/mmpd_s6_frames",
+   "bpm": 84,
+   "alpha": 0.01,
+   "seed": 3006,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.3183850655144187,
+   "wave_phi2": 0.19953981108268865,
+   "wave_a3": 0.2649168836746965,
+   "wave_phi3": 0.4963181944001581,
+   "noise": {
+    "illum_drift": 0.8200861662099628,
+    "flicker_amp": 0.01175469284803766,
+    "flicker_hz": 0.6836680258747777,
+    "motion_px": 17.32719322358693,
+    "rot_deg": 0.9970378918394605,
+    "sensor_std": 8.301770837327508,
+    "color_drift": 0.06552978450315956
+   }
+  },
+  {
+   "id": 3007,
+   "frames_dir": "_workspace/data/faces/mmpd_s1_frames",
+   "bpm": 90,
+   "alpha": 0.01,
+   "seed": 3007,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.7150505151338423,
+   "wave_phi2": 0.16593642626303579,
+   "wave_a3": 0.4916327293633883,
+   "wave_phi3": -0.08382739983752052,
+   "noise": {
+    "illum_drift": 0.3267632305220921,
+    "flicker_amp": 0.005359580396333866,
+    "flicker_hz": 0.7484062145260421,
+    "motion_px": 78.93064234680796,
+    "rot_deg": 2.560693069673545,
+    "sensor_std": 4.791931913321707,
+    "color_drift": 0.06954313192413296
+   }
+  },
+  {
+   "id": 3008,
+   "frames_dir": "_workspace/data/faces/mmpd_s2_frames",
+   "bpm": 97,
+   "alpha": 0.01,
+   "seed": 3008,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.6128560807135564,
+   "wave_phi2": 0.0008098742681278415,
+   "wave_a3": 0.23365715372399795,
+   "wave_phi3": -0.2808319915016989,
+   "noise": {
+    "illum_drift": 0.8194859426561095,
+    "flicker_amp": 0.014040186491916701,
+    "flicker_hz": 0.7108775851033029,
+    "motion_px": 102.33269662150359,
+    "rot_deg": 0.9684279670910909,
+    "sensor_std": 2.650839193643859,
+    "color_drift": 0.03420367492233991
+   }
+  },
+  {
+   "id": 3009,
+   "frames_dir": "_workspace/data/faces/mmpd_s3_frames",
+   "bpm": 103,
+   "alpha": 0.01,
+   "seed": 3009,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.5219331222522625,
+   "wave_phi2": -0.2829415773131738,
+   "wave_a3": 0.23012608025210446,
+   "wave_phi3": -0.07630051551095096,
+   "noise": {
+    "illum_drift": 0.47283996673829437,
+    "flicker_amp": 0.013513803766178105,
+    "flicker_hz": 0.5579868653804184,
+    "motion_px": 80.35968146416134,
+    "rot_deg": 1.0893287861110892,
+    "sensor_std": 4.462389204533882,
+    "color_drift": 0.045749980926649086
+   }
+  },
+  {
+   "id": 3010,
+   "frames_dir": "_workspace/data/faces/mmpd_s4_frames",
+   "bpm": 110,
+   "alpha": 0.01,
+   "seed": 3010,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.37851193112034104,
+   "wave_phi2": 0.247462477275685,
+   "wave_a3": 0.2578114875181693,
+   "wave_phi3": 0.32429987535328697,
+   "noise": {
+    "illum_drift": 0.9126320678328687,
+    "flicker_amp": 0.027610503002932604,
+    "flicker_hz": 0.678272673730938,
+    "motion_px": 9.951641054110814,
+    "rot_deg": 1.212818271706889,
+    "sensor_std": 4.335013804727561,
+    "color_drift": 0.06797036191007257
+   }
+  },
+  {
+   "id": 3011,
+   "frames_dir": "_workspace/data/faces/mmpd_s5_frames",
+   "bpm": 116,
+   "alpha": 0.01,
+   "seed": 3011,
+   "spatial": "uniform",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.8378268477302959,
+   "wave_phi2": 0.03017140113812422,
+   "wave_a3": 0.21035448195292586,
+   "wave_phi3": -0.42916646334804165,
+   "noise": {
+    "illum_drift": 1.217119005169243,
+    "flicker_amp": 0.00289671711074326,
+    "flicker_hz": 0.5651649964431161,
+    "motion_px": 35.90770508853202,
+    "rot_deg": 2.860280394201428,
+    "sensor_std": 4.55318764572236,
+    "color_drift": 0.06117005592052678
+   }
+  },
+  {
+   "id": 3012,
+   "frames_dir": "_workspace/data/faces/mmpd_s6_frames",
+   "bpm": 122,
+   "alpha": 0.01,
+   "seed": 3012,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.2713638977119223,
+   "wave_phi2": -0.024147497766735748,
+   "wave_a3": 0.3751471759613969,
+   "wave_phi3": 0.11037725818371702,
+   "noise": {
+    "illum_drift": 1.2638531381104088,
+    "flicker_amp": 0.025171198738872982,
+    "flicker_hz": 0.7088411169209374,
+    "motion_px": 70.93359738035468,
+    "rot_deg": 2.8950879376193517,
+    "sensor_std": 3.8404708155405682,
+    "color_drift": 0.03140212935112887
+   }
+  }
+ ],
+ "_measured": {
+  "hr": {
+   "p10": 64.9875,
+   "p50": 77.625,
+   "p90": 101.9375,
+   "min": 51.875,
+   "max": 140.0
+  },
+  "a2": {
+   "p10": 0.3371873678613235,
+   "p50": 0.5680947955049189,
+   "p90": 1.102938241293153,
+   "min": 0.26406666403131673,
+   "max": 1.5644477161934902
+  },
+  "a3": {
+   "p10": 0.22929748249188353,
+   "p50": 0.35453524385390317,
+   "p90": 0.550124533004465,
+   "min": 0.16410475889488393,
+   "max": 0.8789523931353593
+  },
+  "flicker_hz": {
+   "p10": 0.52734375,
+   "p50": 0.52734375,
+   "p90": 0.76171875,
+   "min": 0.52734375,
+   "max": 0.99609375
+  },
+  "flicker_amp": {
+   "p10": 0.0006677647703903392,
+   "p50": 0.0028229581047307683,
+   "p90": 0.026190097713301524,
+   "min": 0.000266626750540824,
+   "max": 0.10078214600002243
+  },
+  "drift": {
+   "p10": 0.032455386947842925,
+   "p50": 0.2762323802480745,
+   "p90": 1.1656665616013622,
+   "min": 0.011075635842899278,
+   "max": 1.9935128696307836
+  },
+  "motion_px": {
+   "p10": 5.157067054275067,
+   "p50": 10.079790988807543,
+   "p90": 85.61508450618913,
+   "min": 3.053601518187911,
+   "max": 221.06272940129196
+  },
+  "motion_hz": {
+   "p10": 0.03125,
+   "p50": 0.0625,
+   "p90": 0.28125,
+   "min": 0.03125,
+   "max": 0.875
+  },
+  "sensor_std": {
+   "p10": 0.7512376757323525,
+   "p50": 1.1043273835570488,
+   "p90": 7.874788387090685,
+   "min": 0.5562516199827172,
+   "max": 15.562042045226107
+  },
+  "skin_rgb": null,
+  "n": 120,
+  "skin_rgb_mean": [
+   173.27793909499627,
+   126.4141154216577,
+   104.90623951104165
+  ],
+  "resolution": "320x240 (H\u00d7W), mobile"
+ }
+}

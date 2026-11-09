@@ -1,0 +1,25 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TRAIN6HI_TW_DETCHK",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 122,
+   "alpha": 0.01,
+   "seed": 551,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.0,
+   "wave_phi2": 0,
+   "noise": {
+    "motion_px": 8,
+    "rot_deg": 1.5
+   },
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 60
+  }
+ ]
+}

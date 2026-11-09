@@ -1,0 +1,204 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TRAIN6LO_A",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 42,
+   "alpha": 0.01,
+   "seed": 561,
+   "spatial": "anatomy",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.0,
+   "wave_phi2": 0.1,
+   "wave_a3": 0.25,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 8,
+    "rot_deg": 1.5
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6LO/subject1.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 1.0004637076727176,
+     "cheek": 1.4514160254806385,
+     "nose": 0.4660428868243852,
+     "chin": 0.4996977907748894,
+     "other": 0.2630136293850904
+    },
+    "asym": 1.1350746685501223,
+    "sigma": 0.26997485578141767,
+    "drop": 0.15930966359078924,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 44,
+   "alpha": 0.01,
+   "seed": 562,
+   "spatial": "anatomy",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.35,
+   "wave_phi2": 0.1,
+   "wave_a3": 0.25,
+   "wave_phi3": -0.3,
+   "noise": {
+    "illum_drift": 0.12,
+    "flicker_amp": 0.025,
+    "flicker_hz": 1.2
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6LO/subject2.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.8590349395091706,
+     "cheek": 0.7696239729612748,
+     "nose": 0.8991684325440696,
+     "chin": 0.5099969078487312,
+     "other": 0.17270346452954902
+    },
+    "asym": 1.0042948374926142,
+    "sigma": 0.2952266675941921,
+    "drop": 0.18892570501883543,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/sfhq_03_frames",
+   "bpm": 46,
+   "alpha": 0.01,
+   "seed": 563,
+   "spatial": "anatomy",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.6,
+   "wave_phi2": 0.1,
+   "wave_a3": 0.25,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 10,
+    "rot_deg": 2.0,
+    "sensor_std": 2
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6LO/subject3.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.775370499829315,
+     "cheek": 0.9438652156339388,
+     "nose": 0.7200248578193761,
+     "chin": 0.35736569430025555,
+     "other": 0.42500444198316617
+    },
+    "asym": 1.0988674028627439,
+    "sigma": 0.4071877577770985,
+    "drop": 0.2927701859431608,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 48,
+   "alpha": 0.01,
+   "seed": 564,
+   "spatial": "anatomy",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.45,
+   "wave_phi2": 0.1,
+   "wave_a3": 0.25,
+   "wave_phi3": -0.3,
+   "noise": {
+    "illum_drift": 0.15,
+    "flicker_amp": 0.03,
+    "flicker_hz": 1.0
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6LO/subject4.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.742487484019635,
+     "cheek": 0.5736814761285549,
+     "nose": 0.5967632810966401,
+     "chin": 0.4987262702160117,
+     "other": 0.3262281894953808
+    },
+    "asym": 0.8346517494101022,
+    "sigma": 0.2832091822097036,
+    "drop": 0.3552514313908415,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 5,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 50,
+   "alpha": 0.01,
+   "seed": 565,
+   "spatial": "anatomy",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.75,
+   "wave_phi2": 0.1,
+   "wave_a3": 0.25,
+   "wave_phi3": -0.3,
+   "noise": {
+    "motion_px": 6,
+    "rot_deg": 1.0,
+    "sensor_std": 2
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6LO/subject5.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 1.5338283504613748,
+     "cheek": 1.3864733802866573,
+     "nose": 0.6570942246565145,
+     "chin": 0.39295511985438253,
+     "other": 0.3442319536771365
+    },
+    "asym": 0.9018079728244202,
+    "sigma": 0.2455017474392641,
+    "drop": 0.017688674285189387,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 6,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 45,
+   "alpha": 0.01,
+   "seed": 566,
+   "spatial": "anatomy",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.55,
+   "wave_phi2": 0.1,
+   "wave_a3": 0.25,
+   "wave_phi3": -0.3,
+   "noise": {
+    "illum_drift": 0.1,
+    "motion_px": 8,
+    "rot_deg": 1.5
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6LO/subject6.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 1.2123134017314248,
+     "cheek": 0.9157271864719644,
+     "nose": 1.0230183641309216,
+     "chin": 0.46156141994497324,
+     "other": 0.245201686925478
+    },
+    "asym": 0.8506919423699365,
+    "sigma": 0.19924493609001614,
+    "drop": 0.2028285637963283,
+    "beard_px": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+BASE:
+- ''
+TOOLBOX_MODE: only_test
+TEST:
+  OUTPUT_SAVE_DIR: /SPECPHYS_ROOT/_workspace/data/physformer/runs/ev_RFbase_VIPL/outputs
+  METRICS:
+  - MAE
+  - RMSE
+  - MAPE
+  - Pearson
+  - SNR
+  - BA
+  USE_LAST_EPOCH: true
+  DATA:
+    FS: 30
+    DATASET: VIPL-HR
+    DO_PREPROCESS: false
+    DATA_FORMAT: NDCHW
+    DATA_PATH: /SPECPHYS_RAW/vipl_hr_raw
+    CACHED_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/cache
+    EXP_DATA_NAME: vipl_u8
+    BEGIN: 0.0
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE:
+      - Standardized
+      LABEL_TYPE: Standardized
+      DO_CHUNK: true
+      CHUNK_LENGTH: 160
+      CROP_FACE:
+        DO_CROP_FACE: false
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: true
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: false
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: false
+      RESIZE:
+        H: 128
+        W: 128
+    FILE_LIST_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/cache/DataFileLists/vipl_all.csv
+DEVICE: cuda:0
+NUM_OF_GPU_TRAIN: 1
+LOG:
+  PATH: /SPECPHYS_ROOT/_workspace/data/physformer/runs/ev_RFbase_VIPL
+MODEL:
+  DROP_RATE: 0.2
+  NAME: RhythmFormer
+INFERENCE:
+  BATCH_SIZE: 1
+  EVALUATION_METHOD: FFT
+  EVALUATION_WINDOW:
+    USE_SMALLER_WINDOW: false
+    WINDOW_SIZE: 10
+  MODEL_PATH: /SPECPHYS_ROOT/repos/rPPG-Toolbox/final_model_release/UBFC-rPPG_RhythmFormer.pth

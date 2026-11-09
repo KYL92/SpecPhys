@@ -1,0 +1,53 @@
+BASE:
+- ''
+TOOLBOX_MODE: only_test
+DEVICE: cuda:0
+NUM_OF_GPU_TRAIN: 1
+LOG:
+  PATH: /SPECPHYS_ROOT/_workspace/data/physformer/runs/ev_CoTAF_DM_L_RTNI
+MODEL:
+  NAME: PhysFormer
+  DROP_RATE: 0.1
+TEST:
+  METRICS:
+  - MAE
+  - RMSE
+  - MAPE
+  - Pearson
+  - SNR
+  USE_LAST_EPOCH: true
+  OUTPUT_SAVE_DIR: /SPECPHYS_ROOT/_workspace/data/physformer/runs/ev_CoTAF_DM_L_RTNI/outputs
+  DATA:
+    FS: 30
+    DATASET: UBFC-rPPG
+    DO_PREPROCESS: false
+    DATA_FORMAT: NCDHW
+    DATA_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/RTNI
+    CACHED_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/cache
+    EXP_DATA_NAME: real_RTNI
+    BEGIN: 0.0
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE:
+      - DiffNormalized
+      DATA_AUG:
+      - None
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: true
+      CHUNK_LENGTH: 160
+      CROP_FACE:
+        DO_CROP_FACE: true
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: true
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: false
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: false
+      RESIZE:
+        H: 128
+        W: 128
+INFERENCE:
+  BATCH_SIZE: 1
+  EVALUATION_METHOD: FFT
+  MODEL_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/runs/finetune_CoTAF_DM_L/PreTrainedModels/SYNTH_CoTAF_DM_L_physformer_Epoch9.pth

@@ -1,0 +1,117 @@
+{
+"fps": 30,
+"size": 256,
+"out": "_workspace/data/physformer/HRX_H20",
+"subjects": [
+{
+"id": 3,
+"frames_dir": "_workspace/data/faces/sfhq_06_frames",
+"bpm": 127,
+"alpha": 0.01,
+"seed": 9103,
+"spatial": "patches",
+"coverage": 0.4,
+"patch_scale": 40,
+"wave_a2": 0.45,
+"wave_phi2": 2.8,
+"wave_a3": 0.0,
+"noise": {
+"motion_px": 8,
+"rot_deg": 1.5,
+"sensor_std": 2
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 2,
+"wave_bank_nearest": true
+},
+{
+"id": 7,
+"frames_dir": "_workspace/data/faces/sfhq_05_frames",
+"bpm": 139,
+"alpha": 0.01,
+"seed": 9107,
+"spatial": "patches",
+"coverage": 0.5,
+"patch_scale": 40,
+"wave_a2": 0.15,
+"wave_phi2": 2.1,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.18,
+"flicker_amp": 0.035,
+"flicker_hz": 0.95,
+"motion_px": 12,
+"rot_deg": 2.5,
+"sensor_std": 3
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 2,
+"wave_bank_nearest": true
+},
+{
+"id": 11,
+"frames_dir": "_workspace/data/faces/sfhq_03_frames",
+"bpm": 151,
+"alpha": 0.01,
+"seed": 9111,
+"spatial": "patches",
+"coverage": 0.6,
+"patch_scale": 40,
+"wave_a2": 0.75,
+"wave_phi2": 1.4,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.15,
+"flicker_amp": 0.03,
+"flicker_hz": 1.1
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 2,
+"wave_bank_nearest": true
+},
+{
+"id": 15,
+"frames_dir": "_workspace/data/faces/sfhq_02_frames",
+"bpm": 163,
+"alpha": 0.01,
+"seed": 9115,
+"spatial": "patches",
+"coverage": 0.5,
+"patch_scale": 40,
+"wave_a2": 0.15,
+"wave_phi2": 0.7,
+"wave_a3": 0.0,
+"noise": {
+"motion_px": 10,
+"rot_deg": 2.0
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 2,
+"wave_bank_nearest": true
+},
+{
+"id": 19,
+"frames_dir": "_workspace/data/faces/sfhq_01_frames",
+"bpm": 175,
+"alpha": 0.01,
+"seed": 9119,
+"spatial": "patches",
+"coverage": 0.6,
+"patch_scale": 40,
+"wave_a2": 0.75,
+"wave_phi2": 0.0,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.1,
+"flicker_amp": 0.02,
+"flicker_hz": 1.3,
+"motion_px": 6,
+"rot_deg": 1.0,
+"sensor_std": 2
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 2,
+"wave_bank_nearest": true
+}
+]
+}

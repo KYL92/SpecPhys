@@ -1,0 +1,67 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TEST_E3",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 77,
+   "alpha": 0.01,
+   "seed": 421,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "periodic_motion_amp": 12,
+    "periodic_motion_hz": 0.35,
+    "color_drift": 0.12
+   }
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 64,
+   "alpha": 0.01,
+   "seed": 422,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "periodic_motion_amp": 12,
+    "periodic_motion_hz": 0.35,
+    "color_drift": 0.12
+   }
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 91,
+   "alpha": 0.01,
+   "seed": 423,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "periodic_motion_amp": 12,
+    "periodic_motion_hz": 0.35,
+    "color_drift": 0.12
+   }
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 70,
+   "alpha": 0.01,
+   "seed": 424,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "periodic_motion_amp": 12,
+    "periodic_motion_hz": 0.35,
+    "color_drift": 0.12
+   }
+  }
+ ]
+}

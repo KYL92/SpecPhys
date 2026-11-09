@@ -1,0 +1,45 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TRAIN6HI_TWFR04",
+ "subjects": [
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 128,
+   "alpha": 0.01,
+   "seed": 552,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.3,
+   "wave_phi2": 0.9,
+   "noise": {
+    "illum_drift": 0.12,
+    "flicker_amp": 0.04,
+    "flicker_hz": 1.9
+   },
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 45
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 140,
+   "alpha": 0.01,
+   "seed": 554,
+   "spatial": "patches",
+   "coverage": 0.55,
+   "patch_scale": 40,
+   "wave_a2": 0.15,
+   "wave_phi2": 2.7,
+   "noise": {
+    "illum_drift": 0.15,
+    "flicker_amp": 0.04,
+    "flicker_hz": 2.5
+   },
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 18
+  }
+ ]
+}

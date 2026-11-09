@@ -1,0 +1,192 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TRAIN6HI_A",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 122,
+   "alpha": 0.01,
+   "seed": 551,
+   "spatial": "anatomy",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.0,
+   "wave_phi2": 0,
+   "noise": {
+    "motion_px": 8,
+    "rot_deg": 1.5
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6HI/subject1.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.9011808448637652,
+     "cheek": 1.1145510278651969,
+     "nose": 0.5879599911657994,
+     "chin": 0.46131967259365275,
+     "other": 0.2572099631377829
+    },
+    "asym": 0.8782691305552637,
+    "sigma": 0.3911695114477206,
+    "drop": 0.238667813715953,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 128,
+   "alpha": 0.01,
+   "seed": 552,
+   "spatial": "anatomy",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.3,
+   "wave_phi2": 0.9,
+   "noise": {
+    "illum_drift": 0.12,
+    "flicker_amp": 0.025,
+    "flicker_hz": 1.2
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6HI/subject2.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.8039607183714353,
+     "cheek": 1.0125158566896681,
+     "nose": 0.9138036908468717,
+     "chin": 0.590909629243885,
+     "other": 0.20341536920219003
+    },
+    "asym": 1.1328717331766502,
+    "sigma": 0.4682984610302453,
+    "drop": 0.15259949265476985,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/sfhq_03_frames",
+   "bpm": 134,
+   "alpha": 0.01,
+   "seed": 553,
+   "spatial": "anatomy",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.6,
+   "wave_phi2": 1.8,
+   "noise": {
+    "motion_px": 10,
+    "rot_deg": 2.0,
+    "sensor_std": 2
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6HI/subject3.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 1.328173684076614,
+     "cheek": 1.0502776006040901,
+     "nose": 0.6536102467673427,
+     "chin": 0.5335755627447047,
+     "other": 0.2804658630935455
+    },
+    "asym": 1.0249193248630983,
+    "sigma": 0.3105758023212396,
+    "drop": 0.026143506589293077,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 140,
+   "alpha": 0.01,
+   "seed": 554,
+   "spatial": "anatomy",
+   "coverage": 0.55,
+   "patch_scale": 40,
+   "wave_a2": 0.15,
+   "wave_phi2": 2.7,
+   "noise": {
+    "illum_drift": 0.15,
+    "flicker_amp": 0.03,
+    "flicker_hz": 1.0
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6HI/subject4.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 1.166116833752942,
+     "cheek": 1.1736415066246724,
+     "nose": 1.229806350392115,
+     "chin": 0.46353549267843863,
+     "other": 0.349955052937898
+    },
+    "asym": 0.828661077488397,
+    "sigma": 0.4403540754086248,
+    "drop": 0.09268469838050741,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 5,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 146,
+   "alpha": 0.01,
+   "seed": 555,
+   "spatial": "anatomy",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.45,
+   "wave_phi2": 0.5,
+   "noise": {
+    "motion_px": 6,
+    "rot_deg": 1.0,
+    "sensor_std": 2
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6HI/subject5.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.9209815615679563,
+     "cheek": 0.6477703820272016,
+     "nose": 0.7270600304282705,
+     "chin": 0.4569754558649328,
+     "other": 0.296215633121872
+    },
+    "asym": 1.131883388232796,
+    "sigma": 0.4809984754259654,
+    "drop": 0.027557331701734668,
+    "beard_px": 0
+   }
+  },
+  {
+   "id": 6,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 152,
+   "alpha": 0.01,
+   "seed": 556,
+   "spatial": "anatomy",
+   "coverage": 0.45,
+   "patch_scale": 40,
+   "wave_a2": 0.75,
+   "wave_phi2": 1.3,
+   "noise": {
+    "illum_drift": 0.1,
+    "motion_px": 8,
+    "rot_deg": 1.5
+   },
+   "amap_file": "/SPECPHYS_ROOT/_workspace/data/physformer/amap_base/TRAIN6HI/subject6.npy",
+   "anatomy": {
+    "jit": {
+     "forehead": 0.7990868829923563,
+     "cheek": 1.0788575364425579,
+     "nose": 0.5157310470426052,
+     "chin": 0.6214334933092277,
+     "other": 0.37741140868617495
+    },
+    "asym": 0.8411850854786486,
+    "sigma": 0.30458373068944533,
+    "drop": 0.3973076341495747,
+    "beard_px": 0
+   }
+  }
+ ]
+}

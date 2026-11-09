@@ -1,0 +1,107 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TRAIN_CLEAN",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 62,
+   "alpha": 0.01,
+   "seed": 101,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 96,
+   "alpha": 0.01,
+   "seed": 102,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 58,
+   "alpha": 0.01,
+   "seed": 103,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 104,
+   "alpha": 0.01,
+   "seed": 104,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 5,
+   "frames_dir": "_workspace/data/faces/sfhq_03_frames",
+   "bpm": 68,
+   "alpha": 0.01,
+   "seed": 105,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 6,
+   "frames_dir": "_workspace/data/faces/sfhq_03_frames",
+   "bpm": 88,
+   "alpha": 0.01,
+   "seed": 106,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 7,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 74,
+   "alpha": 0.01,
+   "seed": 107,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 8,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 110,
+   "alpha": 0.01,
+   "seed": 108,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 9,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 82,
+   "alpha": 0.01,
+   "seed": 109,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  },
+  {
+   "id": 10,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 55,
+   "alpha": 0.01,
+   "seed": 110,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40
+  }
+ ]
+}

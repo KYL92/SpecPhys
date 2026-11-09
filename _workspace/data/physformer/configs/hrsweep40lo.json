@@ -1,0 +1,807 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "/SPECPHYS_ROOT/_workspace/data/physformer/HRSWEEP40LO",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 45,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 60,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 75,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 90,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 5,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 105,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 6,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 120,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 7,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 135,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 8,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 150,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 9,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 165,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 10,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 180,
+   "alpha": 0.003,
+   "seed": 9501,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 11,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_01"
+  },
+  {
+   "id": 11,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 45,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 12,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 60,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 13,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 75,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 14,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 90,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 15,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 105,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 16,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 120,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 17,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 135,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 18,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 150,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 19,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 165,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 20,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 180,
+   "alpha": 0.003,
+   "seed": 9502,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 23,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_female_02"
+  },
+  {
+   "id": 21,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 45,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 22,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 60,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 23,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 75,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 24,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 90,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 25,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 105,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 26,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 120,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 27,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 135,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 28,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 150,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 29,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 165,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 30,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 180,
+   "alpha": 0.003,
+   "seed": 9503,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 37,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "diff_male_01"
+  },
+  {
+   "id": 31,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 45,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 32,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 60,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 33,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 75,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 34,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 90,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 35,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 105,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 36,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 120,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 37,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 135,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 38,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 150,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 39,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 165,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  },
+  {
+   "id": 40,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 180,
+   "alpha": 0.003,
+   "seed": 9504,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+   "wave_bank_idx": 52,
+   "noise": {
+    "illum_drift": 0.15,
+    "motion_px": 6,
+    "rot_deg": 1.5,
+    "sensor_std": 3
+   },
+   "skin_mask_parser": true,
+   "hrsweep_face": "sfhq04"
+  }
+ ]
+}

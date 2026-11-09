@@ -1,0 +1,82 @@
+#!/bin/bash
+# 체인 38 (21단계): 뱅크 확장(v1 vs v2)의 Leave-One-Dataset-Out CV — DLCN/MCD/PURE/NIRP/MMPD 5폴드 × 2변형
+# 설계: _workspace/23_lodo_bank_eval.md. 폴드별 학습 풀 = 고정 실(UBFC+NOISY_REAL+CMP_REAL) + 타 4셋 학습분할 + 가상 42.
+source /SPECPHYS_ROOT/scripts/chain_lib.sh
+{
+echo "$(date '+%m-%d %H:%M') CHAIN38 START"
+
+# ---------- PURE 폴드용 뱅크(누수 차단: PURE 세그 제거) + 가상 42 재주입 ----------
+python - <<'PYEOF'
+import json, numpy as np
+PF = "/SPECPHYS_ROOT/_workspace/data/physformer"
+for name, srcf, keep in (
+    ("bank_lodo_v1_noPURE", "ppg_bank.npz", lambda s: s.startswith("ubfc")),
+    ("bank_lodo_v2_noPURE", "ppg_bank_v2.npz", lambda s: s.startswith(("ubfc", "bidmc", "dalia")))):
+    z = np.load(f"{PF}/{srcf}")
+    m = np.array([keep(str(x)) for x in z["src"]])
+    np.savez(f"{PF}/{name}.npz", segments=z["segments"][m], f0=z["f0"][m], src=z["src"][m])
+    print(f"BANKF {name} {int(m.sum())}/{len(m)}")
+for c in ("train20h", "train6hi", "train6lo"):
+    for tag, srccfg, bank, near in (("lptw", f"{c}_tw", "bank_lodo_v1_noPURE", False),
+                                    ("lptw2", f"{c}_tw2", "bank_lodo_v2_noPURE", True)):
+        d = json.load(open(f"{PF}/configs/{srccfg}.json"))
+        d["out"] = f"{PF}/{c.upper()}_{tag.upper()}"
+        for s in d["subjects"]:
+            s["wave_bank"] = f"{PF}/{bank}.npz"
+            if near: s["wave_bank_nearest"] = True
+            else: s.pop("wave_bank_nearest", None)
+        json.dump(d, open(f"{PF}/configs/{c}_{tag}.json", "w"), indent=1)
+        print(f"CONFIG {c}_{tag}")
+PYEOF
+for c in train20h train6hi train6lo; do for T in lptw lptw2; do
+  U=$(echo $c | tr a-z A-Z)_$(echo $T | tr a-z A-Z); rm -rf $PFA/$U
+  python $ROOT/generator/build_synth_dataset.py --config $PFA/configs/${c}_${T}.json > /tmp/build_${c}_${T}.log 2>&1 \
+    && echo BUILD_${U}_OK || echo BUILD_${U}_FAIL
+done; done
+codec_copies TRAIN20H_LPTW CMP_SYN_LPTW sweep
+codec_copies TRAIN20H_LPTW2 CMP_SYN_LPTW2 sweep
+
+# ---------- 폴드 풀 ----------
+mk_pool_lodo() { local P=$1 FOLD=$2 VS=$3; rm -rf $PFA/COTRAIN_$P; mkdir -p $PFA/COTRAIN_$P; local i=0
+  addt() { local s; for s in "$@"; do i=$((i+1)); ln -sfn "$(readlink -f "$s")" "$PFA/COTRAIN_$P/subject$((2000+i))"; done; }
+  for s in $PFA/COTRAIN_ALLF/subject*; do t=$(readlink -f "$s"); case $t in
+    *UBFC_dataset*|*COTRAIN_NOISY_REAL*|*CMP_REAL*) addt "$t";; esac; done
+  [ "$FOLD" != PURE ] && addt $PFA/PURE_TRAIN/subject*
+  [ "$FOLD" != MCD ]  && addt $PFA/MCD_TRAIN/subject*
+  [ "$FOLD" != MMPD ] && addt $PFA/MMPD_TRAIN/subject*
+  if [ "$FOLD" != NIRP ]; then local c k; for c in NIRP_STILL NIRP_SMALL NIRP_LARGE; do for k in 1 2 3 4 5 6; do addt $PFA/$c/subject$k; done; done; fi
+  addt $PFA/TRAIN20H_$VS/subject* $PFA/TRAIN6HI_$VS/subject* $PFA/TRAIN6LO_$VS/subject* $PFA/CMP_SYN_$VS/subject*
+  echo "POOL_$P n=$(ls $PFA/COTRAIN_$P | wc -l) broken=$(find $PFA/COTRAIN_$P -xtype l | wc -l)"; }
+
+# ---------- 5폴드 × 2변형 ----------
+for FOLD in DLCN MCD PURE NIRP MMPD; do
+for V in TW TW2; do
+  VS=$V; [ "$FOLD" = PURE ] && VS=LP$V
+  P=LODO_${FOLD}_${V}; M=LD_${FOLD}_${V}_L
+  c=$(echo ld_${FOLD}_${V} | tr A-Z a-z)
+  mk_pool_lodo $P $FOLD $VS
+  gen_yaml $M $P $c ldm > /dev/null
+  drop_cache cotrain_$c
+  run_gated 21000 "$PFA/yaml_$M/finetune_$M.yaml" /tmp/ft_$M.log ${M}_TRAIN
+  drop_cache cotrain_$c
+  find $PFA/runs/finetune_$M/PreTrainedModels -name "*.pth" -not -name "*Epoch9.pth" -delete 2>/dev/null
+  case $FOLD in
+    DLCN) EVS="DLCN";; MCD) EVS="MCD_A MCD_B";; PURE) EVS="PURE";;
+    NIRP) EVS="NIRP_STILL NIRP_SMALL NIRP_LARGE";; MMPD) EVS="";;
+  esac
+  for A in $EVS; do run_gated 6000 "$PFA/yaml_$M/ev_${M}_$A.yaml" /tmp/ev_${M}_$A.log ${M}_$A; done
+  if [ "$FOLD" = MMPD ]; then
+    for k in 1 2 3 4 5 6; do
+      run_gated 6000 "$PFA/yaml_$M/ev_${M}_MMPD_B$k.yaml" /tmp/ev_${M}_MMPD_B$k.log ${M}_MMPD_B$k
+      drop_cache mmpd_ldm_B$k
+    done
+  fi
+  ( cd $ROOT && python scripts/agg_model2.py $M > /dev/null 2>&1 )
+  [ "$FOLD" = MMPD ] && ( cd $ROOT && python scripts/agg_mmpd.py $M > /dev/null 2>&1 )
+  echo "$(date '+%H:%M') FOLD_${FOLD}_${V}_DONE"
+done
+done
+python $ROOT/scripts/lodo_cmp.py
+rm -rf $PFA/COTRAIN_LODO_* 2>/dev/null
+echo "$(date '+%m-%d %H:%M') CHAIN38 DONE"
+} >> /tmp/chain38.log 2>&1

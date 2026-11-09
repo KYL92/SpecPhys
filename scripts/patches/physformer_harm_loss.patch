@@ -1,0 +1,40 @@
+--- a/neural_methods/trainer/PhysFormerTrainer.py	2026-08-25 13:14:23.639129788 +0900
++++ b/neural_methods/trainer/PhysFormerTrainer.py	2026-08-25 13:16:04.273595424 +0900
+@@ -173,6 +173,37 @@
+                                    / (psd_in.sum(dim=-1) + 1e-8)).mean()
+                     loss = loss + _wb * loss_band + _ws * loss_sparse
+ 
++                # [Virtual-Face patch 19] 고조파 모호성 억제 손실 (harmonic-ambiguity suppression).
++                # PURE 저심박(45~48 BPM) 트라이얼과 MCD에서 관찰된 "정확히 2배/0.5배" 오차는
++                # 예측 스펙트럼이 GT 기본파 f0 대신 2·f0(또는 0.5·f0)에 파워를 싣는 현상이다.
++                # 라벨 HR(hr[bb], 청크 welch 피크)로 f0를 정하고, 예측 rPPG 파워스펙트럼에서
++                #   L_h = mean_b [ (P(2f0) + P(f0/2)) / (P(f0) + P(2f0) + P(f0/2) + eps) ]
++                # 를 벌한다 (P(·)=±0.1 Hz 가우시안 창 가중 파워 합, 창이 대역 밖이면 해당 항 0).
++                # 실 PPG 는 정상적으로 2차 고조파를 가지므로(a2 중앙값 0.50 → 파워비 ≈0.25) 비율 자체를
++                # 0으로 몰지 않고 **힌지**: L_h = mean_b relu(ratio_b − τ), τ = PF_HARM_TAU (기본 0.3).
++                # (정상 파형 ratio ≤ 0.3 → 벌점 0, 배가/반감 ratio → ~1 → 벌점 ~0.7)
++                # 환경변수 PF_HARM_LOSS=1 로 활성화, 가중치 λ_h = PF_HARM_W (기본 1.0). 미설정 시 완전 무효(=0).
++                # 정규화는 세 대역 파워 합으로만 하므로 다른 주파수 성분에 압력을 주지 않고
++                # 기본파 vs 고조파/서브하모닉의 상대 비율만 조정한다 (SiNC 사전 손실과 독립·병용 가능).
++                if _os.environ.get("PF_HARM_LOSS", "0") == "1":
++                    _lh = float(_os.environ.get("PF_HARM_W", "1.0"))
++                    _sig = float(_os.environ.get("PF_HARM_SIGMA_HZ", "0.1"))
++                    _tau = float(_os.environ.get("PF_HARM_TAU", "0.3"))
++                    T = rPPG.shape[-1]
++                    psd_h = torch.abs(torch.fft.rfft(rPPG, dim=-1)) ** 2               # (B, F)
++                    freqs_h = torch.fft.rfftfreq(T, d=1.0 / self.frame_rate).to(rPPG.device)  # (F,)
++                    f0 = (hr / 60.0).view(-1, 1)                                         # (B,1) Hz
++                    def _bandpow(fc):
++                        w = torch.exp(-0.5 * ((freqs_h.view(1, -1) - fc) / _sig) ** 2)  # (B,F)
++                        valid = ((fc >= 0.5) & (fc <= 4.0)).float()                      # 대역 밖 → 0
++                        return (psd_h * w).sum(dim=-1) * valid.view(-1)
++                    p_f0, p_2f0, p_hf0 = _bandpow(f0), _bandpow(2.0 * f0), _bandpow(0.5 * f0)
++                    _ratio = (p_2f0 + p_hf0) / (p_f0 + p_2f0 + p_hf0 + 1e-8)                # (B,) in [0,1]
++                    loss_harm = torch.relu(_ratio - _tau).mean()
++                    loss = loss + _lh * loss_harm
++                    if idx % 100 == 99:
++                        print(f"[harm] loss_harm={float(loss_harm):.4f} ratio_mean={float(_ratio.mean()):.3f} (lambda={_lh}, tau={_tau})")
++
+                 loss.backward()
+                 self.optimizer.step()
+ 

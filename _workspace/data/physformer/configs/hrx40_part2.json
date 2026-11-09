@@ -1,0 +1,227 @@
+{
+"fps": 30,
+"size": 256,
+"out": "_workspace/data/physformer/HRX40",
+"subjects": [
+{
+"id": 3,
+"frames_dir": "_workspace/data/faces/sfhq_03_frames",
+"bpm": 42,
+"alpha": 0.01,
+"seed": 9003,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.3,
+"wave_phi2": 1.4,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.15,
+"flicker_amp": 0.03,
+"flicker_hz": 1.1
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 0,
+"wave_bank_nearest": true
+},
+{
+"id": 7,
+"frames_dir": "_workspace/data/faces/sfhq_02_frames",
+"bpm": 46,
+"alpha": 0.01,
+"seed": 9007,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.0,
+"wave_phi2": 0.7,
+"wave_a3": 0.0,
+"noise": {
+"motion_px": 10,
+"rot_deg": 2.0
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 0,
+"wave_bank_nearest": true
+},
+{
+"id": 11,
+"frames_dir": "_workspace/data/faces/sfhq_01_frames",
+"bpm": 50,
+"alpha": 0.01,
+"seed": 9011,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.6,
+"wave_phi2": 0.0,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.1,
+"flicker_amp": 0.02,
+"flicker_hz": 1.3,
+"motion_px": 6,
+"rot_deg": 1.0,
+"sensor_std": 2
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 0,
+"wave_bank_nearest": true
+},
+{
+"id": 15,
+"frames_dir": "_workspace/data/faces/sfhq_06_frames",
+"bpm": 54,
+"alpha": 0.01,
+"seed": 9015,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.3,
+"wave_phi2": 2.8,
+"wave_a3": 0.0,
+"noise": {
+"motion_px": 8,
+"rot_deg": 1.5,
+"sensor_std": 2
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 0,
+"wave_bank_nearest": true
+},
+{
+"id": 19,
+"frames_dir": "_workspace/data/faces/sfhq_05_frames",
+"bpm": 58,
+"alpha": 0.01,
+"seed": 9019,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.0,
+"wave_phi2": 2.1,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.18,
+"flicker_amp": 0.035,
+"flicker_hz": 0.95,
+"motion_px": 12,
+"rot_deg": 2.5,
+"sensor_std": 3
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 0,
+"wave_bank_nearest": true
+},
+{
+"id": 23,
+"frames_dir": "_workspace/data/faces/sfhq_03_frames",
+"bpm": 126,
+"alpha": 0.01,
+"seed": 9023,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.3,
+"wave_phi2": 1.4,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.15,
+"flicker_amp": 0.03,
+"flicker_hz": 1.1
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 1,
+"wave_bank_nearest": true
+},
+{
+"id": 27,
+"frames_dir": "_workspace/data/faces/sfhq_02_frames",
+"bpm": 138,
+"alpha": 0.01,
+"seed": 9027,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.0,
+"wave_phi2": 0.7,
+"wave_a3": 0.0,
+"noise": {
+"motion_px": 10,
+"rot_deg": 2.0
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 1,
+"wave_bank_nearest": true
+},
+{
+"id": 31,
+"frames_dir": "_workspace/data/faces/sfhq_01_frames",
+"bpm": 150,
+"alpha": 0.01,
+"seed": 9031,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.6,
+"wave_phi2": 0.0,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.1,
+"flicker_amp": 0.02,
+"flicker_hz": 1.3,
+"motion_px": 6,
+"rot_deg": 1.0,
+"sensor_std": 2
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 1,
+"wave_bank_nearest": true
+},
+{
+"id": 35,
+"frames_dir": "_workspace/data/faces/sfhq_06_frames",
+"bpm": 162,
+"alpha": 0.01,
+"seed": 9035,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.3,
+"wave_phi2": 2.8,
+"wave_a3": 0.0,
+"noise": {
+"motion_px": 8,
+"rot_deg": 1.5,
+"sensor_std": 2
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 1,
+"wave_bank_nearest": true
+},
+{
+"id": 39,
+"frames_dir": "_workspace/data/faces/sfhq_05_frames",
+"bpm": 174,
+"alpha": 0.01,
+"seed": 9039,
+"spatial": "uniform",
+"coverage": 1.0,
+"patch_scale": 40,
+"wave_a2": 0.0,
+"wave_phi2": 2.1,
+"wave_a3": 0.0,
+"noise": {
+"illum_drift": 0.18,
+"flicker_amp": 0.035,
+"flicker_hz": 0.95,
+"motion_px": 12,
+"rot_deg": 2.5,
+"sensor_std": 3
+},
+"wave_bank": "/SPECPHYS_ROOT/_workspace/data/physformer/ppg_bank.npz",
+"wave_bank_idx": 1,
+"wave_bank_nearest": true
+}
+]
+}

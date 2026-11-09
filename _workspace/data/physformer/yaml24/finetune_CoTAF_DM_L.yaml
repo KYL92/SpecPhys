@@ -1,0 +1,121 @@
+BASE:
+- ''
+TOOLBOX_MODE: train_and_test
+DEVICE: cuda:0
+NUM_OF_GPU_TRAIN: 1
+LOG:
+  PATH: /SPECPHYS_ROOT/_workspace/data/physformer/runs/finetune_CoTAF_DM_L
+MODEL:
+  NAME: PhysFormer
+  DROP_RATE: 0.1
+  RESUME: /SPECPHYS_ROOT/repos/rPPG-Toolbox/final_model_release/UBFC-rPPG_PhysFormer_DiffNormalized.pth
+  MODEL_DIR: /SPECPHYS_ROOT/_workspace/data/physformer/runs/finetune_CoTAF_DM_L/PreTrainedModels
+TRAIN:
+  BATCH_SIZE: 4
+  EPOCHS: 10
+  LR: 5e-5
+  MODEL_FILE_NAME: SYNTH_CoTAF_DM_L_physformer
+  PLOT_LOSSES_AND_LR: false
+  DATA:
+    FS: 30
+    DATASET: UBFC-rPPG
+    DO_PREPROCESS: true
+    DATA_FORMAT: NCDHW
+    DATA_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/COTRAIN_ALLFDM
+    CACHED_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/cache
+    EXP_DATA_NAME: cotrain_allfdm
+    BEGIN: 0.0
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE:
+      - DiffNormalized
+      DATA_AUG:
+      - None
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: true
+      CHUNK_LENGTH: 160
+      CROP_FACE:
+        DO_CROP_FACE: true
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: true
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: false
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: false
+      RESIZE:
+        H: 128
+        W: 128
+VALID:
+  DATA:
+    FS: 30
+    DATASET: UBFC-rPPG
+    DO_PREPROCESS: false
+    DATA_FORMAT: NCDHW
+    DATA_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/TRAIN20
+    CACHED_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/cache
+    EXP_DATA_NAME: synth_train20
+    BEGIN: 0.9
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE:
+      - DiffNormalized
+      DATA_AUG:
+      - None
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: true
+      CHUNK_LENGTH: 160
+      CROP_FACE:
+        DO_CROP_FACE: true
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: true
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: false
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: false
+      RESIZE:
+        H: 128
+        W: 128
+TEST:
+  METRICS:
+  - MAE
+  - RMSE
+  - MAPE
+  - Pearson
+  - SNR
+  USE_LAST_EPOCH: true
+  OUTPUT_SAVE_DIR: /SPECPHYS_ROOT/_workspace/data/physformer/runs/finetune_CoTAF_DM_L/outputs
+  DATA:
+    FS: 30
+    DATASET: UBFC-rPPG
+    DO_PREPROCESS: false
+    DATA_FORMAT: NCDHW
+    DATA_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/TEST_C3
+    CACHED_PATH: /SPECPHYS_ROOT/_workspace/data/physformer/cache
+    EXP_DATA_NAME: synth_C3
+    BEGIN: 0.0
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE:
+      - DiffNormalized
+      DATA_AUG:
+      - None
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: true
+      CHUNK_LENGTH: 160
+      CROP_FACE:
+        DO_CROP_FACE: true
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: true
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: false
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: false
+      RESIZE:
+        H: 128
+        W: 128
+INFERENCE:
+  BATCH_SIZE: 4
+  EVALUATION_METHOD: FFT

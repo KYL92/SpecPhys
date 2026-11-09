@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/STRESS_SHADOW10",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 77,
+   "alpha": 0.01,
+   "seed": 9421,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "illum_drift": 0.1,
+    "sensor_std": 2,
+    "shadow_half": {
+     "amp": 0.1,
+     "hz": 1.383,
+     "side": "right"
+    }
+   }
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 64,
+   "alpha": 0.01,
+   "seed": 9422,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "illum_drift": 0.1,
+    "sensor_std": 2,
+    "shadow_half": {
+     "amp": 0.1,
+     "hz": 1.167,
+     "side": "right"
+    }
+   }
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 91,
+   "alpha": 0.01,
+   "seed": 9423,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "illum_drift": 0.1,
+    "sensor_std": 2,
+    "shadow_half": {
+     "amp": 0.1,
+     "hz": 1.617,
+     "side": "right"
+    }
+   }
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 70,
+   "alpha": 0.01,
+   "seed": 9424,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "noise": {
+    "illum_drift": 0.1,
+    "sensor_std": 2,
+    "shadow_half": {
+     "amp": 0.1,
+     "hz": 1.267,
+     "side": "right"
+    }
+   }
+  }
+ ]
+}

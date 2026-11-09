@@ -1,0 +1,47 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "_workspace/data/physformer/TEST_C2",
+ "subjects": [
+  {
+   "id": 1,
+   "frames_dir": "_workspace/data/faces/sfhq04_frames",
+   "bpm": 77,
+   "alpha": 0.01,
+   "seed": 311,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40
+  },
+  {
+   "id": 2,
+   "frames_dir": "_workspace/data/faces/diff_female_01_frames",
+   "bpm": 64,
+   "alpha": 0.01,
+   "seed": 312,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40
+  },
+  {
+   "id": 3,
+   "frames_dir": "_workspace/data/faces/diff_male_01_frames",
+   "bpm": 91,
+   "alpha": 0.01,
+   "seed": 313,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40
+  },
+  {
+   "id": 4,
+   "frames_dir": "_workspace/data/faces/diff_female_02_frames",
+   "bpm": 70,
+   "alpha": 0.01,
+   "seed": 314,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40
+  }
+ ]
+}

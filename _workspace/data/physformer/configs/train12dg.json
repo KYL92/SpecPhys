@@ -1,0 +1,247 @@
+{
+ "fps": 30,
+ "size": 256,
+ "out": "/SPECPHYS_ROOT/_workspace/data/physformer/TRAIN12DG",
+ "subjects": [
+  {
+   "id": 241,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 45,
+   "alpha": 0.01,
+   "seed": 941,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.0,
+   "wave_phi2": 0.0,
+   "wave_a3": 0.0,
+   "noise": {
+    "illum_drift": 0.1,
+    "flicker_amp": 0.02,
+    "flicker_hz": 1.3,
+    "motion_px": 6,
+    "rot_deg": 1.0,
+    "sensor_std": 2
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_241.npz"
+  },
+  {
+   "id": 242,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 55,
+   "alpha": 0.01,
+   "seed": 942,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.15,
+   "wave_phi2": 0.7,
+   "wave_a3": 0.0,
+   "noise": {
+    "motion_px": 10,
+    "rot_deg": 2.0
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_242.npz"
+  },
+  {
+   "id": 243,
+   "frames_dir": "_workspace/data/faces/sfhq_03_frames",
+   "bpm": 65,
+   "alpha": 0.01,
+   "seed": 943,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.3,
+   "wave_phi2": 1.4,
+   "wave_a3": 0.0,
+   "noise": {
+    "illum_drift": 0.15,
+    "flicker_amp": 0.03,
+    "flicker_hz": 1.1
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_243.npz"
+  },
+  {
+   "id": 244,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 75,
+   "alpha": 0.01,
+   "seed": 944,
+   "spatial": "patches",
+   "coverage": 0.4,
+   "patch_scale": 40,
+   "wave_a2": 0.45,
+   "wave_phi2": 2.1,
+   "wave_a3": 0.2,
+   "noise": {
+    "illum_drift": 0.18,
+    "flicker_amp": 0.035,
+    "flicker_hz": 0.95,
+    "motion_px": 12,
+    "rot_deg": 2.5,
+    "sensor_std": 3
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_244.npz"
+  },
+  {
+   "id": 245,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 85,
+   "alpha": 0.01,
+   "seed": 945,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.6,
+   "wave_phi2": 2.8,
+   "wave_a3": 0.0,
+   "noise": {
+    "motion_px": 8,
+    "rot_deg": 1.5,
+    "sensor_std": 2
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_245.npz"
+  },
+  {
+   "id": 246,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 95,
+   "alpha": 0.01,
+   "seed": 946,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.75,
+   "wave_phi2": 0.0,
+   "wave_a3": 0.0,
+   "noise": {
+    "illum_drift": 0.1,
+    "flicker_amp": 0.02,
+    "flicker_hz": 1.3,
+    "motion_px": 6,
+    "rot_deg": 1.0,
+    "sensor_std": 2
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_246.npz"
+  },
+  {
+   "id": 247,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 105,
+   "alpha": 0.01,
+   "seed": 947,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.0,
+   "wave_phi2": 0.7,
+   "wave_a3": 0.0,
+   "noise": {
+    "motion_px": 10,
+    "rot_deg": 2.0
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_247.npz"
+  },
+  {
+   "id": 248,
+   "frames_dir": "_workspace/data/faces/sfhq_03_frames",
+   "bpm": 120,
+   "alpha": 0.01,
+   "seed": 948,
+   "spatial": "patches",
+   "coverage": 0.5,
+   "patch_scale": 40,
+   "wave_a2": 0.15,
+   "wave_phi2": 1.4,
+   "wave_a3": 0.2,
+   "noise": {
+    "illum_drift": 0.15,
+    "flicker_amp": 0.03,
+    "flicker_hz": 1.1
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_248.npz"
+  },
+  {
+   "id": 249,
+   "frames_dir": "_workspace/data/faces/sfhq_05_frames",
+   "bpm": 135,
+   "alpha": 0.01,
+   "seed": 949,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.3,
+   "wave_phi2": 2.1,
+   "wave_a3": 0.0,
+   "noise": {
+    "illum_drift": 0.18,
+    "flicker_amp": 0.035,
+    "flicker_hz": 0.95,
+    "motion_px": 12,
+    "rot_deg": 2.5,
+    "sensor_std": 3
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_249.npz"
+  },
+  {
+   "id": 250,
+   "frames_dir": "_workspace/data/faces/sfhq_06_frames",
+   "bpm": 150,
+   "alpha": 0.01,
+   "seed": 950,
+   "spatial": "patches",
+   "coverage": 0.4,
+   "patch_scale": 40,
+   "wave_a2": 0.45,
+   "wave_phi2": 2.8,
+   "wave_a3": 0.0,
+   "noise": {
+    "motion_px": 8,
+    "rot_deg": 1.5,
+    "sensor_std": 2
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_250.npz"
+  },
+  {
+   "id": 251,
+   "frames_dir": "_workspace/data/faces/sfhq_01_frames",
+   "bpm": 165,
+   "alpha": 0.01,
+   "seed": 951,
+   "spatial": "uniform",
+   "coverage": 1.0,
+   "patch_scale": 40,
+   "wave_a2": 0.6,
+   "wave_phi2": 0.0,
+   "wave_a3": 0.0,
+   "noise": {
+    "illum_drift": 0.1,
+    "flicker_amp": 0.02,
+    "flicker_hz": 1.3,
+    "motion_px": 6,
+    "rot_deg": 1.0,
+    "sensor_std": 2
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_251.npz"
+  },
+  {
+   "id": 252,
+   "frames_dir": "_workspace/data/faces/sfhq_02_frames",
+   "bpm": 180,
+   "alpha": 0.01,
+   "seed": 952,
+   "spatial": "patches",
+   "coverage": 0.6,
+   "patch_scale": 40,
+   "wave_a2": 0.75,
+   "wave_phi2": 0.7,
+   "wave_a3": 0.2,
+   "noise": {
+    "motion_px": 10,
+    "rot_deg": 2.0
+   },
+   "wave_file": "/SPECPHYS_ROOT/_workspace/data/physformer/degwaves/dg_252.npz"
+  }
+ ]
+}
